@@ -21,7 +21,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--font-color);
-  background: var(--homepage-bg);
+  background: white;
 }
 
 a {
@@ -41,7 +41,7 @@ button {
   height: 5rem;
   width: 5rem;
   border-radius: 100%;
-  background-color: var(--homepage-bg);
+  background-color: white;
   font-family: "Playfair Display";
   border-style: none;
   -webkit-transition-duration: 200ms;
@@ -61,9 +61,8 @@ button {
 
 .button-text {
   font-size: 2.5rem;
-  text-shadow: 2px 2px 6px var(--homepage-bg);
   letter-spacing: 0.5rem;
-  color: var(--primary-color);
+  color: var(--font-color);
 }
 
 .exit-button {
@@ -180,8 +179,10 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 30px;
-  height: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
 }
 
 .nav .nav-links {
@@ -191,10 +192,23 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
   gap: 30px;
+}
+
+.nav .nav-links svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about {
@@ -325,6 +339,7 @@ button {
 
 .service-container .service {
   height: 100vh;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,8 +362,29 @@ button {
 }
 
 .service-container .service h2 {
-  font-size: 10rem;
+  font-size: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 3%;
+}
+
+.service-container .service h2 svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 2rem 0 0;
+  color: var(--primary-color);
 }
 
 .service-container .service h3 {
@@ -356,11 +392,15 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-style: italic;
+  margin: 0 25rem;
 }
 
 .service-container .service p {
-  margin: 3rem 5rem 3rem 5rem;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  margin: 3rem 25rem;
+  font-size: 1.1rem;
 }
 
 .service-container .service ul .list-title {
@@ -372,19 +412,65 @@ button {
           text-decoration: wavy;
 }
 
-#website h2 {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: url(../img/forest.gif);
+.custom-shape-divider-top-1648811132 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
-#graphic-design {
-  background-color: var(--homepage-bg);
+.custom-shape-divider-top-1648811132 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.custom-shape-divider-top-1648811132 .shape-fill {
+  fill: #7d9781;
+}
+
+.custom-shape-divider-top-1648811517 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1648811517 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.custom-shape-divider-top-1648811517 .shape-fill {
+  fill: var(--homepage-bg);
+}
+
+#web-design {
+  height: auto;
+  padding-bottom: 50px;
 }
 
 #branding {
-  background-color: #d7f3ff;
+  background-color: var(--homepage-bg);
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#tech-support {
+  background-color: #d4e8ec;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .contact {
@@ -473,12 +559,14 @@ button {
   height: 80vh;
   width: 300px;
   font-size: 3rem;
+  display: none;
 }
 
 .spacer2 {
   height: 70vh;
   width: 300px;
   background-color: red;
+  display: none;
 }
 
 @media screen and (max-width: 720px) {
@@ -493,7 +581,7 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 10px;
+    gap: 30px;
     height: 5%;
   }
   .nav .nav-links {
@@ -506,7 +594,6 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 1px;
   }
   .home {
     height: 100vh;
@@ -549,6 +636,21 @@ button {
     font-size: 4rem;
     padding-bottom: 3%;
   }
+  .service-container .service h2 svg {
+    display: none;
+  }
+  .service-container .service h3 {
+    padding-top: 5%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-style: italic;
+    margin: 1rem;
+  }
+  .service-container .service p {
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
   .project-container {
     display: -ms-grid;
     display: grid;
@@ -583,6 +685,19 @@ button {
     position: absolute;
     z-index: 5;
     color: #f1f1f1;
+  }
+  .contact-area {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+  }
+  .contact-area .contact-item {
+    height: 80vh;
+    width: 400px;
+    font-size: 5.3rem;
+    margin-left: 4rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

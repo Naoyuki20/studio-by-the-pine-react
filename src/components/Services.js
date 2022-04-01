@@ -1,5 +1,8 @@
 import { useGlobalContext } from "./Context";
 import { FaArrowsAltV } from "react-icons/fa";
+import { MdWeb } from "react-icons/md";
+import { AiFillFormatPainter } from "react-icons/ai";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
 import gif from "../img/forest.gif";
 
 const Services = () => {
@@ -18,17 +21,23 @@ const Services = () => {
           </button>
           <ul className="nav-links">
             <li>
-              <a href="#website">Web Desgin</a>
+              <a href="#web-design">
+                <MdWeb />
+              </a>
             </li>
             <li>
-              <a href="#graphic-design">Graphic Design</a>
+              <a href="#branding">
+                <AiFillFormatPainter />
+              </a>
             </li>
             <li>
-              <a href="#branding">Branding</a>
+              <a href="#tech-support">
+                <HiOutlineDesktopComputer />
+              </a>
             </li>
           </ul>
         </nav>
-        <header>
+        {/* <header>
           While described separately for ease of information, all of our
           services compliments eachother and is offered in a packaged form.
           <br />
@@ -37,13 +46,14 @@ const Services = () => {
           <br />
           We don't just make websites for it to look cool, we're here to solve
           your business needs through a website
-        </header>
-        <div className="service" id="website">
+        </header> */}
+        <section className="service" id="web-design">
           <h2>Web Design</h2>
+
           <hr />
           <h3>
-            Create an eye catching website that will attract new customers and
-            will act as your business' 24/7 sales employee
+            Simple and beautiful website that will reach new customers and act
+            as your 24/7 "sales person"
           </h3>
           <p>
             Your business' website is the most important aspect of your digital
@@ -59,29 +69,61 @@ const Services = () => {
             “salesperson” that will promote your business online; both day and
             night.
           </p>
-        </div>
-        <div className="service" id="graphic-design">
+        </section>
+
+        <section className="service" id="branding">
+          <div class="custom-shape-divider-top-1648811132">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M1200 0L0 0 892.25 114.72 1200 0z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
           <h2>Branding</h2>
           <hr />
-          <h3>For small / local businesses</h3>
+          <h3>
+            Build a consistent and memorable brand to reach your business goals
+          </h3>
           <p>
-            Whether you are looking to refresh your business or even expand your
-            business, a consistent and memorable business identity is essential
-            to building up your brand. Paralleling our web design, we utilize
-            our graphic design and writing expertise to help you communicate
-            your business to your customers with more clarity.
+            Whether you are looking to refresh your business or expand it, a
+            consistent and memorable business identity is essential to building
+            up your brand. We utilize our graphic design and writing expertise
+            to help you communicate your business to your customers with more
+            clarity
           </p>
           <ul>
             <li className="list-title">Services include:</li>
-            <li>Logo and identity</li>
+            <li>Logo and business identity</li>
             <li>Digital / Physical Contents</li>
             <li>Copywriting</li>
           </ul>
-        </div>
-        <div className="service" id="branding">
+        </section>
+        <section className="service" id="tech-support">
+          <div class="custom-shape-divider-top-1648811517">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
           <h2>Tech Support</h2>
           <hr />
-          <h3>For small / local businesses</h3>
+          <h3>
+            Avoid costly technology downtimes so you can focus on running your
+            business
+          </h3>
           <p>
             Having well maintained technology for your business is crucial to
             keeping up productivity and avoiding future technology troubles. In
@@ -92,7 +134,13 @@ const Services = () => {
             can consult you about new technologies / devices that can help make
             work more efficient for you and your employees.
           </p>
-        </div>
+          <ul>
+            <li className="list-title">Services include:</li>
+            <li>Technology maintenance</li>
+            <li>Technology Suggestions and Integration</li>
+            <li>General Tech Support</li>
+          </ul>
+        </section>
       </div>
     </section>
   );

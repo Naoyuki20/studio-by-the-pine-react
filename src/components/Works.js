@@ -1,6 +1,9 @@
 import { useGlobalContext } from "./Context";
 import pic from "../img/studiomirvae.png";
 import { FaArrowsAltV } from "react-icons/fa";
+import { MdWeb } from "react-icons/md";
+import { AiFillFormatPainter } from "react-icons/ai";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
 
 const Works = () => {
   const { isWorksOpen, closePage } = useGlobalContext();
@@ -12,17 +15,23 @@ const Works = () => {
           <button className="exit-button" onClick={() => closePage("WORKS")}>
             <FaArrowsAltV />
           </button>
-          <ul className="nav-links">
+          {/* <ul className="nav-links">
             <li>
-              <a href="#website">Web Desgin</a>
+              <a href="/">
+                <MdWeb />
+              </a>
             </li>
             <li>
-              <a href="#graphic-design">Graphic Design</a>
+              <a href="/">
+                <AiFillFormatPainter />
+              </a>
             </li>
             <li>
-              <a href="#branding">Branding</a>
+              <a href="/">
+                <HiOutlineDesktopComputer />
+              </a>
             </li>
-          </ul>
+          </ul> */}
         </nav>
         <div className="project-container">
           <a href="https://studiomirvae.fi" className="project" target="_blank">

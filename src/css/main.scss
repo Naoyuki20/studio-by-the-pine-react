@@ -21,7 +21,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--font-color);
-  background: var(--homepage-bg);
+  background: white;
 }
 
 a {
@@ -42,7 +42,7 @@ button {
   height: 5rem;
   width: 5rem;
   border-radius: 100%;
-  background-color: var(--homepage-bg);
+  background-color: white;
   font-family: "Playfair Display";
 
   border-style: none;
@@ -56,9 +56,9 @@ button {
 
 .button-text {
   font-size: 2.5rem;
-  text-shadow: 2px 2px 6px var(--homepage-bg);
+  // text-shadow: 2px 2px 6px var(--homepage-bg);
   letter-spacing: 0.5rem;
-  color: var(--primary-color);
+  color: var(--font-color);
 }
 
 .exit-button {
@@ -150,14 +150,20 @@ button {
 .nav {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  height: 5%;
+  align-items: center;
+  gap: 50px;
 
   .nav-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    font-size: 2rem;
     gap: 30px;
+    svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
@@ -264,14 +270,6 @@ button {
   scroll-snap-align: start;
   // position: relative;
 
-  h1 {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // // text-align: left;
-    // // margin-top: 3rem;
-    // // font-size: 3rem;
-  }
   footer {
     font-size: 1.2rem;
     text-align: center;
@@ -280,6 +278,7 @@ button {
   }
   .service {
     height: 100vh;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -293,19 +292,32 @@ button {
     }
 
     h2 {
-      font-size: 10rem;
-      // align-self: center;
-      // justify-content: center;
+      font-size: 8rem;
+      display: flex;
+      align-self: center;
+      justify-content: center;
       padding-bottom: 3%;
+      svg {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        margin: 1rem 2rem 0 0;
+        color: var(--primary-color);
+      }
     }
 
     h3 {
       padding-top: 5%;
       align-items: center;
-      font-style: italic;
+
+      // margin: 0rem 15rem;
+      margin: 0 25rem;
     }
     p {
-      margin: 3rem 5rem 3rem 5rem;
+      // column-count: 2;
+      align-items: right;
+      margin: 3rem 25rem;
+      font-size: 1.1rem;
     }
     ul {
       .list-title {
@@ -318,21 +330,72 @@ button {
   }
 }
 
-#website {
+//CUSTOM CSS
+
+.custom-shape-divider-top-1648811132 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1648811132 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.custom-shape-divider-top-1648811132 .shape-fill {
+  fill: #7d9781;
+}
+.custom-shape-divider-top-1648811517 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1648811517 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.custom-shape-divider-top-1648811517 .shape-fill {
+  fill: var(--homepage-bg);
+}
+
+#web-design {
+  height: auto;
+  padding-bottom: 50px;
+
   h2 {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: url(../img/forest.gif);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // color: transparent;
+    // background-image: url(../img/forest.gif);
   }
 }
 
-#graphic-design {
+#branding {
   background-color: var(--homepage-bg);
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-#branding {
-  background-color: rgb(215, 243, 255);
+#tech-support {
+  background-color: rgb(212, 232, 236);
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 //CONTACT PAGE
@@ -405,12 +468,14 @@ button {
   height: 80vh;
   width: 300px;
   font-size: 3rem;
+  display: none;
 }
 
 .spacer2 {
   height: 70vh;
   width: 300px;
   background-color: red;
+  display: none;
 }
 
 @media screen and (max-width: 720px) {
@@ -424,14 +489,13 @@ button {
   .nav {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     height: 5%;
 
     .nav-links {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1px;
     }
   }
 
@@ -472,9 +536,21 @@ button {
 
       h2 {
         font-size: 4rem;
-        // align-self: center;
-        // justify-content: center;
+
         padding-bottom: 3%;
+        svg {
+          display: none;
+        }
+      }
+      h3 {
+        padding-top: 5%;
+        align-items: center;
+        font-style: italic;
+        margin: 1rem;
+      }
+      p {
+        font-size: 1.1rem;
+        margin: 1rem;
       }
     }
   }
@@ -505,6 +581,19 @@ button {
       position: absolute;
       z-index: 5;
       color: #f1f1f1;
+    }
+  }
+  .contact-area {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+
+    .contact-item {
+      height: 80vh;
+      width: 400px;
+      font-size: 5.3rem;
+      margin-left: 4rem;
+      text-align: center;
     }
   }
 }

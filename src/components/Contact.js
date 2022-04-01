@@ -34,12 +34,14 @@ const Contact = () => {
           </div>
 
           <div className="contact-item">
-            or give us a call at, <br />
+            or we can also talk IRL, call us! <br />
             <a href="tel:0405594393" target="_blank">
               040 559 4393
             </a>
           </div>
-          <div className="contact-item">Can't wait to hear from you!</div>
+          <div className="contact-item">
+            We can't wait to learn about your business!
+          </div>
         </div>
         {/* <hr id="bottom-line" /> */}
       </div>
