@@ -9,6 +9,12 @@ import ReactGA from "react-ga";
 import { useEffect } from "react/cjs/react.production.min";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-92V0CZF638");
+
+    ReactGA.pageview("/");
+  }, []);
+
   return (
     <>
       <About />

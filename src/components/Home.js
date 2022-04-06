@@ -1,16 +1,8 @@
 import logo from "../../src/img/logo.jpg";
 import { useGlobalContext } from "./Context";
-import ReactGA from "react-ga";
-import { useEffect } from "react/cjs/react.production.min";
 
 const Home = () => {
   const { openPage } = useGlobalContext();
-
-  useEffect(() => {
-    ReactGA.initialize("G-92V0CZF638");
-
-    ReactGA.pageview("/");
-  }, []);
 
   return (
     <section className="home" id="home">
