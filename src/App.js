@@ -5,6 +5,8 @@ import About from "./components/About";
 import Works from "./components/Works";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import ReactGA from "react-ga";
+import { useEffect } from "react/cjs/react.production.min";
 
 function App() {
   return (
