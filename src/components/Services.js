@@ -4,39 +4,15 @@ import { MdWeb } from "react-icons/md";
 import { AiFillFormatPainter } from "react-icons/ai";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import gif from "../img/forest.gif";
+import Navbar from "./Navbar";
 
 const Services = () => {
-  const { isServicesOpen, closePage } = useGlobalContext();
+  const { isServicesOpen } = useGlobalContext();
 
   return (
     <section className={`${isServicesOpen ? "services-show" : "services"}`}>
       <div className="service-container">
-        <nav className="nav">
-          <button
-            className="exit-button"
-            id="services-exit"
-            onClick={() => closePage("SERVICES")}
-          >
-            <FaArrowsAltV />
-          </button>
-          <ul className="nav-links">
-            <li>
-              <a href="#web-design">
-                <MdWeb />
-              </a>
-            </li>
-            <li>
-              <a href="#branding">
-                <AiFillFormatPainter />
-              </a>
-            </li>
-            <li>
-              <a href="#tech-support">
-                <HiOutlineDesktopComputer />
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <Navbar page="SERVICES" />
         {/* <header>
           While described separately for ease of information, all of our
           services compliments eachother and is offered in a packaged form.

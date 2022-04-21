@@ -79,19 +79,18 @@ button {
 //SCROLL BAR
 
 ::-webkit-scrollbar {
-  width: 10px;
   color: var(--accent-color);
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--homepage-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--font-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--primary-color);
 }
 
 .home {
@@ -116,7 +115,6 @@ button {
     grid-area: about;
     display: grid;
     place-items: center;
-    visibility: hidden;
   }
 
   .works-toggle-area {
@@ -143,6 +141,7 @@ button {
     display: grid;
     place-items: center;
   }
+  
 }
 
 //NAV
@@ -171,11 +170,14 @@ button {
 
 .about {
   position: fixed;
+  background-color: var(--background-color);
   top: -100%;
   height: 100vh;
   width: 100%;
   overflow: auto;
   transition-duration: 500ms;
+  display: grid;
+  grid-auto-flow: column;
 }
 .about-show {
   position: fixed;
@@ -187,6 +189,30 @@ button {
   transition-duration: 500ms;
   display: grid;
   grid-auto-flow: column;
+
+}
+.about-area {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  h2{
+    font-size: 2rem;
+    color: var(--homepage-bg);
+
+    span{
+    color: var(--primary-color);
+    }
+  }
+  .about-item{
+    height: 80vh;
+    width: 500px;
+    font-size: 5.3rem;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 //WORKS PAGE
@@ -427,13 +453,18 @@ button {
   display: grid;
   grid-auto-flow: column;
   place-items: center;
+ 
 
   .contact-item {
     height: 80vh;
     width: 500px;
     font-size: 5.3rem;
     margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+   
   }
   .socials-links {
     display: grid;
@@ -462,20 +493,6 @@ button {
   left: 0;
   width: 110vw;
   border-color: var(--accent-color);
-}
-
-.spacer {
-  height: 80vh;
-  width: 300px;
-  font-size: 3rem;
-  display: none;
-}
-
-.spacer2 {
-  height: 70vh;
-  width: 300px;
-  background-color: red;
-  display: none;
 }
 
 @media screen and (max-width: 720px) {

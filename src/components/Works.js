@@ -4,6 +4,7 @@ import { FaArrowsAltV } from "react-icons/fa";
 import { MdWeb } from "react-icons/md";
 import { AiFillFormatPainter } from "react-icons/ai";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
+import Navbar from "./Navbar";
 
 const Works = () => {
   const { isWorksOpen, closePage } = useGlobalContext();
@@ -11,28 +12,7 @@ const Works = () => {
   return (
     <section className={`${isWorksOpen ? "works-show" : "works"}`}>
       <div className="works-container">
-        <nav className="nav">
-          <button className="exit-button" onClick={() => closePage("WORKS")}>
-            <FaArrowsAltV />
-          </button>
-          {/* <ul className="nav-links">
-            <li>
-              <a href="/">
-                <MdWeb />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <AiFillFormatPainter />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <HiOutlineDesktopComputer />
-              </a>
-            </li>
-          </ul> */}
-        </nav>
+        <Navbar page="WORKS" />
         <div className="project-container">
           <a href="https://studiomirvae.fi" className="project" target="_blank">
             <img src={pic} alt="" className="project-img" />

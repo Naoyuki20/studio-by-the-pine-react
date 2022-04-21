@@ -1,6 +1,7 @@
 import { useGlobalContext } from "./Context";
 import { SiMinutemailer } from "react-icons/si";
 import { FaWhatsappSquare, FaArrowsAltH } from "react-icons/fa";
+import { ImArrowRight2 } from "react-icons/im";
 
 const Contact = () => {
   const { isContactOpen, closePage } = useGlobalContext();
@@ -11,14 +12,17 @@ const Contact = () => {
         <button className="exit-button" onClick={() => closePage("CONTACT")}>
           <FaArrowsAltH />
         </button>
-        {/* <hr id="top-line" /> */}
+
         <div className="contact-area">
           <div className="contact-item">
-            If you're interested in working with us,
+            <p>A little haiku I wrote, goes something like this:</p>
           </div>
           <div className="contact-item">
-            we'd love to have a chat, Message us!
-            <br />
+            <p>Your business can benefit with us,</p>
+          </div>
+          <div className="contact-item">
+            <p>send us a message and we can discuss!</p>
+
             <ul className="socials-links">
               <li>
                 <a href="https://wa.me/15164554202" target="_blank">
@@ -34,16 +38,15 @@ const Contact = () => {
           </div>
 
           <div className="contact-item">
-            or we can also talk IRL, call us! <br />
+            <p>Or we can call and have a talk,</p>
             <a href="tel:0405594393" target="_blank">
               040 559 4393
             </a>
           </div>
           <div className="contact-item">
-            We can't wait to learn about your business!
+            <p>Don't be shy and give us a knock!</p>
           </div>
         </div>
-        {/* <hr id="bottom-line" /> */}
       </div>
     </section>
   );
