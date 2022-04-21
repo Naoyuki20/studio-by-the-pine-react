@@ -533,6 +533,22 @@ button {
       height: 150px;
     }
   }
+  //ABOUT
+.about-area{
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  
+  .about-item {
+    height: 80vh;
+    width: 350px;
+    font-size: 4rem;
+    margin-left: 3rem;
+    text-align: center;
+  }
+}
+  
+
   //SERVICES
   .service-container {
     scroll-snap-align: start;
@@ -600,6 +616,9 @@ button {
       color: #f1f1f1;
     }
   }
+
+  //CONTACT
+
   .contact-area {
     display: grid;
     grid-auto-flow: column;

@@ -640,6 +640,19 @@ button {
   .home .logo-area .logo {
     height: 150px;
   }
+  .about-area {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+  }
+  .about-area .about-item {
+    height: 80vh;
+    width: 350px;
+    font-size: 4rem;
+    margin-left: 3rem;
+    text-align: center;
+  }
   .service-container {
     scroll-snap-align: start;
   }
