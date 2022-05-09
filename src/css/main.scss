@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
 :root {
-  --primary-color: rgb(10, 46, 10);
-  --button-color: rgba(115, 139, 118, 0.479);
+  --primary-color: #224600;
+  --button-color: #DCE9CF;
   --homepage-bg: rgb(236, 223, 212);
-  --background-color: rgb(125, 151, 129);
-  --accent-color: rgb(192, 60, 43);
-  --font-color: rgb(24, 63, 24);
+  --background-color: #DCE9CF;
+  --accent-color: #D92E00;
+  --font-color: #224600;
 }
 
 * {
@@ -22,10 +22,10 @@ body {
   line-height: 1.5;
   color: var(--font-color);
   background: white;
-}
+} 
 
 a {
-  text-decoration: none;
+  text-decoration: none; 
   color: var(--primary-color);
 
   &:hover {
@@ -128,7 +128,8 @@ button {
     place-items: center;
 
     .logo {
-      height: 400px;
+      height: 200px;
+      padding: 1rem;
     }
   }
   .services-toggle-area {
@@ -375,7 +376,7 @@ button {
 }
 
 .custom-shape-divider-top-1648811132 .shape-fill {
-  fill: #7d9781;
+  fill: var(--background-color)
 }
 .custom-shape-divider-top-1648811517 {
   position: absolute;

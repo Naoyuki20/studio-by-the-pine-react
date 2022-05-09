@@ -1,4 +1,4 @@
-import logo from "../../src/img/logo.jpg";
+import logo from "../../src/img/Logo_square.png";
 import { useGlobalContext } from "./Context";
 
 const Home = () => {
