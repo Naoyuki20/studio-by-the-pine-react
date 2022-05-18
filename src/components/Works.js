@@ -18,12 +18,6 @@ const Works = () => {
             <img src={pic} alt="" className="project-img" />
             <div className="project-info">
               <h2>Studio Mirva E</h2>
-              <br />
-              <ul>
-                <li>Website</li>
-                <li>Wordpress</li>
-                <li>Graphic Design</li>
-              </ul>
             </div>
           </a>
         </div>

@@ -13,15 +13,15 @@ const About = () => {
         <div className="about-area">
           <div className="about-item">
             <h2>
-              <span>Studio</span> by the pine.
+              <span id="about-studio">Studio</span> by the pine<span id="about-period">.</span>
             </h2>
-            <p>provides creative solutions.</p>
+            <p>provides creative business solutions.</p>
           </div>
           <div className="about-item">
             <p>We design websites, logos, branding,</p>
           </div>
           <div className="about-item">
-            <p>whatever creative needs your business may have</p>
+            <p>whatever digital needs your business may have</p>
           </div>
           <div className="about-item">
             <p>...</p>
