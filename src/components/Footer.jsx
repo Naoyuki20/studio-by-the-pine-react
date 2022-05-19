@@ -7,7 +7,7 @@ const Footer = () => {
         <Link to="/blog">Blog</Link>
       </div>
       <div className="footer-section">
-        <a href="https://soundcloud.com/watnaomusic" target="_blank">
+        <a href="https://soundcloud.com/naoyukisan" target="_blank">
           Music
         </a>
       </div>
