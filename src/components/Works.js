@@ -15,7 +15,7 @@ const Works = () => {
         <Navbar page="WORKS" />
         <div className="project-container">
           <a href="https://studiomirvae.fi" className="project" target="_blank">
-            <img src={pic} alt="" className="project-img" />
+            <img src={pic} alt="studio mirva e" className="project-img" />
             <div className="project-info">
               <h2>Studio Mirva E</h2>
             </div>
