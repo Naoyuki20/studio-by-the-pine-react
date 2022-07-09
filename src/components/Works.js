@@ -1,6 +1,8 @@
 import { useGlobalContext } from "./Context";
 import mirva from "../img/studiomirvae.png";
 import jenni from "../img/hierojajenni.png";
+import e from "../img/E.png";
+import hieroja from "../img/hieroja.png";
 import { FaArrowsAltV } from "react-icons/fa";
 import { MdWeb } from "react-icons/md";
 import { AiFillFormatPainter } from "react-icons/ai";
@@ -16,13 +18,13 @@ const Works = () => {
         <Navbar page="WORKS" />
         <div className="project-container">
           <a href="https://hierojajennivaananen.fi" className="project" target="_blank">
-            <img src={mirva} alt="hieroja jenni vaananen" className="project-img" />
+            <img src={hieroja} alt="hieroja jenni vaananen" className="project-img" />
             <div className="project-info">
               <h2>Hieroja Jenni Väänanen</h2>
             </div>
           </a>
           <a href="https://studiomirvae.fi" className="project" target="_blank">
-            <img src={pic} alt="studio mirva e" className="project-img" />
+            <img src={e} alt="studio mirva e" className="project-img" />
             <div className="project-info">
               <h2>Studio Mirva E</h2>
             </div>
