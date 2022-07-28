@@ -3,6 +3,7 @@ import mirva from "../img/studiomirvae.png";
 import jenni from "../img/hierojajenni.png";
 import e from "../img/E.png";
 import hieroja from "../img/hieroja.png";
+import saimaanlatu from "../img/saimaanlatu.png";
 import { FaArrowsAltV } from "react-icons/fa";
 import { MdWeb } from "react-icons/md";
 import { AiFillFormatPainter } from "react-icons/ai";
@@ -17,6 +18,12 @@ const Works = () => {
       <div className="works-container">
         <Navbar page="WORKS" />
         <div className="project-container">
+          <a href="https://saimaanlatu.fi" className="project" target="_blank">
+            <img src={saimaanlatu} alt="saimaan latu" className="project-img" />
+            <div className="project-info">
+              <h2>Saimaan Latu ry</h2>
+            </div>
+          </a>
           <a href="https://hierojajennivaananen.fi" className="project" target="_blank">
             <img src={hieroja} alt="hieroja jenni vaananen" className="project-img" />
             <div className="project-info">
