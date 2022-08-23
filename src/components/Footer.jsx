@@ -11,6 +11,11 @@ const Footer = () => {
           Music
         </a>
       </div>
+      <div className="footer-section">
+        <a href="http://vr.studiobythepine.com" target="_blank">
+          VR Experience
+        </a>
+      </div>
     </footer>
   );
 };
