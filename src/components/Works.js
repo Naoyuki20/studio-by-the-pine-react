@@ -7,6 +7,7 @@ import saimaanlatu from "../img/saimaanlatu.png";
 import saksan from "../img/saksan.png";
 import anitta from "../img/anitta.png";
 import Navbar from "./Navbar";
+import {FaArrowsAltV} from "react-icons/fa";
 
 const Works = () => {
   const { isWorksOpen, closePage } = useGlobalContext();
@@ -18,7 +19,7 @@ const Works = () => {
           <FaArrowsAltV />
         </button>
         <div className="project-container">
-          <a href="https://saimaanlatu.fi" className="project" target="_blank">
+          <a href="https://parturikampaamoanitta.hair" className="project" target="_blank">
             <img src={anitta} alt="parturi kampaamo anitta" className="project-img" />
             <div className="project-info">
               <h2>Parturi-kampaamo Anitta</h2>
@@ -30,7 +31,6 @@ const Works = () => {
               <h2>Saimaan Latu ry</h2>
             </div>
           </a>
-          
           <a href="https://hierojajennivaananen.fi" className="project" target="_blank">
             <img src={hieroja} alt="hieroja jenni vaananen" className="project-img" />
             <div className="project-info">
